@@ -1,0 +1,3 @@
+# j'ignore l'environnement virtuel
+venv/
+env/

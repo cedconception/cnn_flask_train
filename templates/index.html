@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNN Training Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container d-flex m-5 wrap-content ">
+        <div class="col-md-3">
+            <h1 class="bg-primary text-white">Examen de ML</h1>
+        </div>
+        <div class="col-md-8">
+            <h1 class="mt-5">Entraînez votre Réseau de Neurones Convolutionnel</h1>
+            <form action="/upload" method="POST" enctype="multipart/form-data" class="mt-4">
+                <div class="mb-3">
+                    <label for="images" class="form-label">Téléchargez vos images</label>
+                    <input type="file" class="form-control" name="images" multiple required>
+                </div>
+                <div class="mb-3">
+                    <label for="learning_rate" class="form-label">Taux d'apprentissage</label>
+                    <input type="text" class="form-control" name="learning_rate" placeholder="0.001" required>
+                </div>
+                <div class="mb-3">
+                    <label for="epochs" class="form-label">Nombre d'époques</label>
+                    <input type="number" class="form-control" name="epochs" placeholder="10" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Entraîner le modèle</button>
+            </form>
+
+        </div>
+    </div>
+    <div class="row bg-black text-white">
+        <h6 class="text-center">Designed by Cedric Muteya </h6>
+    </div>
+</body>
+
+</html>
